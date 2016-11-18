@@ -1042,3 +1042,12 @@ Processing by BooksController#show as HTML
 Completed 200 OK in 27ms (Views: 25.7ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/authors" for 127.0.0.1 at 2016-11-18 01:47:06 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.1ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  Rendered authors/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 158ms (Views: 141.8ms | ActiveRecord: 0.5ms)
+
+
