@@ -1,0 +1,19 @@
+<h1>New Book</h1>
+<%= form_for @book do |f| %>
+    <% if @book.errors.any? %>
+        <h2>Erroes:</h2>
+        <ul>
+          <% @book.errors.full_messages.each do |message| %>
+              <li><%= message %></li>
+          <% end %>
+        </ul>
+    <% end %>
+    <p>
+      <%= f.label :title %><br />
+      <%= f.text_field :title %><br />
+      <br />
+    </p>
+    <p>
+      <%= f.submit "Añadir libro" %>
+    </p>
+<% end %>
